@@ -18,27 +18,25 @@ Save the answer, not the whole chat. Bookmark useful responses from ChatGPT, Cla
 
 ## File layout
 
-​```
-manifest.json              Manifest V3 config
-background.js              Service worker (install bootstrap + message router)
-content/
-  chatgpt.js               ChatGPT adapter (CodeMirror-aware extractor)
-  claude.js                Claude adapter
-  gemini.js                Gemini adapter (handles <code-block> custom element)
-  sidebar.css              Styles for injected UI (FAB, toast, save buttons)
-lib/
-  content-helpers.js       Shared: FAB, toast, save-button injection, observer
-  storage.js               chrome.storage wrapper (chats, folders, snippets)
-  exporter.js              Chat → Markdown + download
-  turndown.js              Bundled HTML→Markdown converter (MIT, by Dom Christie)
-popup/
-  popup.html               Vault UI
-  popup.css                Vault styles (warm stone palette, serif headings)
-  popup.js                 Vault logic + markdown renderer
-icons/                     16/48/128 PNGs
-README.md
-PRIVACY.md
-​```
+    manifest.json              Manifest V3 config
+    background.js              Service worker (install bootstrap + message router)
+    content/
+      chatgpt.js               ChatGPT adapter (CodeMirror-aware extractor)
+      claude.js                Claude adapter
+      gemini.js                Gemini adapter (handles <code-block> custom element)
+      sidebar.css              Styles for injected UI (FAB, toast, save buttons)
+    lib/
+      content-helpers.js       Shared: FAB, toast, save-button injection, observer
+      storage.js               chrome.storage wrapper (chats, folders, snippets)
+      exporter.js              Chat → Markdown + download
+      turndown.js              Bundled HTML→Markdown converter (MIT, by Dom Christie)
+    popup/
+      popup.html               Vault UI
+      popup.css                Vault styles (warm stone palette, serif headings)
+      popup.js                 Vault logic + markdown renderer
+    icons/                     16/48/128 PNGs
+    README.md
+    PRIVACY.md
 
 ## Install for local testing
 
